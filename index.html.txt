@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
 <head>
     <title>سوق إلكتروني</title>
     <style>
@@ -221,6 +225,19 @@
         window.onload = function() {
             changeLanguage();
         };
+// Firebase Config - ضع هنا الكود الذي نسخته
+const firebaseConfig = {
+  apiKey: "...",
+  authDomain: "...",
+  projectId: "...",
+  storageBucket: "...",
+  messagingSenderId: "...",
+  appId: "..."
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
     </script>
 </body>
+
 </html>
